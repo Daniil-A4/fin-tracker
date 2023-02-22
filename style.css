@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+/* ==================================================================================================== */
+body {
+	background-color: rgb(80, 80, 80);
+	margin: 20px;
+}
+
+.fin-tracker__container {
+	margin: 70px 0 70px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.pie-chart {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 3px solid rgb(0, 140, 121);
+	/* background: conic-gradient( 
+    rgb(197, 39, 0) 45deg, rgb(77, 77, 77) 45deg 70deg,rgb(0, 124, 195) 70deg 200deg, rgb(0, 180, 177) 200deg 280deg, purple 280deg); */
+}
+
+label {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 0px;
+}
+
+label input {
+	font-size: 16px;
+	border-radius: 4px;
+	padding: 3px;
+	margin-left: 15px;
+}
+
+form button {
+	margin-top: 10px;
+	padding: 4px 0;
+	width: 100%;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+form button:hover {
+	background-color: rgb(212, 251, 204);
+}
+
+.clearBtn {
+	margin-top: 10px;
+	padding: 4px 0;
+	width: 100%;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	opacity: 0;
+	transition: 700ms;
+}
+
+#fin-tracker-form {
+	background-color: rgba(151, 210, 255, 0.731);
+	box-shadow: 3px 2px 4px 1px rgb(221, 220, 220);
+	padding: 20px;
+}
+
+.fin-tracker__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 0;
+}
+
+.fin-tracker__row label {
+	margin-right: 5px;
+}
+
+.fin-tracker__row input {
+	padding: 4px;
+	color: rgb(22, 160, 133), 76%, 36%;
+}
+
+#records li {
+	margin: 0 0 0 20px;
+}
+
+#records li {
+	display: flex;
+	align-items: center;
+}
+
+#records li::before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: var(--color);
+	border-radius: 50%;
+	margin-right: 10px;
+	right: calc(100% + 7px);
+}
+
+#records button {
+	padding: 5px;
+	margin-left: 10px;
+	color: rgb(245, 4, 4);
+	background: none;
+	border: none;
+	font-size: 22px;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+#records :not(:hover)>button {
+	opacity: 0;
+}
+
+.line__container {
+	margin-top: 200px;
+}
+
+.line-shart {
+	margin: auto;
+	width: 450px;
+	height: 10px;
+	border-radius: 10px;
+	border: 1px solid rgb(255, 255, 255);
+	/* background: linear-gradient(
+    to left,
+    red 20%,
+    orange 20% 40%,
+    yellow 40% 60%,
+    green 60% 80%,
+    blue 80%
+  ); */
+}
+
+.line__color {
+	height: inherit;
+	background-color: #fff;
+}
+
+.button {
+	background-color: rgb(149, 104, 104);
+}
